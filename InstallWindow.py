@@ -12,29 +12,44 @@ class InstallWindow(QWidget):
         layout=QVBoxLayout()
 
         label_db_name=QLabel("Database Name : ")
+        label_db_name.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
         label_db_username=QLabel("Database Username : ")
+        label_db_username.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
         label_db_password=QLabel("Database Password : ")
+        label_db_password.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
         label_admin_username=QLabel("Admin Username : ")
+        label_admin_username.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
         label_admin_password=QLabel("Admin Password : ")
+        label_admin_password.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
         label_no_of_two_seater=QLabel("No of Two Wheeler Space : ")
+        label_no_of_two_seater.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
         label_no_of_four_seater=QLabel("No. of Four Wheeler Space : ")
+        label_no_of_four_seater.setStyleSheet("color:#000;padding:8px 0px;font-size:18px;")
 
 
         self.input_db_name=QLineEdit()
         self.input_db_name.setText("vehicle_parking")
+        self.input_db_name.setStyleSheet("padding:5px;font-size:17px")
 
         self.input_db_username=QLineEdit()
         self.input_db_username.setText("vehicle")
+        self.input_db_username.setStyleSheet("padding:5px;font-size:17px")
 
         self.input_db_password=QLineEdit()
         self.input_db_password.setText("vehicle_password")
+        self.input_db_password.setStyleSheet("padding:5px;font-size:17px")
 
         self.input_admin_username=QLineEdit()
+        self.input_admin_username.setStyleSheet("padding:5px;font-size:17px")
         self.input_admin_password=QLineEdit()
+        self.input_admin_password.setStyleSheet("padding:5px;font-size:17px")
         self.input_two_wheeler=QLineEdit()
+        self.input_two_wheeler.setStyleSheet("padding:5px;font-size:17px")
         self.input_four_wheeler=QLineEdit()
+        self.input_four_wheeler.setStyleSheet("padding:5px;font-size:17px")
 
         buttonsave=QPushButton("save config")
+        buttonsave.setStyleSheet("padding:5px;font-size:17px;background:green;color:#fff")
 
         self.error_label=QLabel()
         self.error_label.setStyleSheet("color:red")
